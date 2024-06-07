@@ -11,21 +11,20 @@
     figcaption {
       text-align: center;
       margin-top: 1px;
-      font-size: 1rem;
-      color: #555;
+      font-size: 1em;
+      color: #111;
     }
   </style>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -76,7 +75,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            This work proposes a retrieve-and-transfer framework for zero-shot robotic manipulation, dubbed RAM, featuring generalizability across various objects, environments, and embodiments. Unlike existing approaches that learn manipulation from expensive in-domain demonstrations, RAM capitalizes on a retrieval-based affordance transfer paradigm to acquire versatile manipulation capabilities from abundant out-of-domain data. RAM first extracts unified affordance at scale from diverse sources of demonstrations including robotic data, human-object interaction (HOI) data, and custom data to construct a comprehensive affordance memory. Then given a language instruction, RAM hierarchically retrieves the most similar demonstration from the affordance memory and transfers such out-of-domain 2D affordance to in-domain 3D actionable affordance in a zero-shot and embodiment-agnostic manner. Extensive simulation and real-world evaluations demonstrate that our RAM consistently outperforms existing works in diverse daily tasks. Additionally, RAM shows significant potential for downstream applications such as automatic and efficient data collection, one-shot visual imitation, and LLM/VLM-integrated long-horizon manipulation.
+            This work proposes a retrieve-and-transfer framework for zero-shot robotic manipulation, dubbed RAM, featuring generalizability across various objects, environments, and embodiments. Unlike existing approaches that learn manipulation from expensive in-domain demonstrations, RAM capitalizes on a retrieval-based affordance transfer paradigm to acquire versatile manipulation capabilities from abundant out-of-domain data. RAM first extracts unified affordance at scale from diverse sources of demonstrations including robotic data, human-object interaction (HOI) data, and custom data to construct a comprehensive affordance memory. Then given a language instruction, RAM hierarchically retrieves the most similar demonstration from the affordance memory and transfers such out-ofdomain 2D affordance to in-domain 3D actionable affordance in a zero-shot and embodiment-agnostic manner. Extensive simulation and real-world evaluations demonstrate that our RAM consistently outperforms existing works in diverse daily tasks. Additionally, RAM shows significant potential for downstream applications such as automatic and efficient data collection, one-shot visual imitation, and LLM/VLM-integrated long-horizon manipulation.
           </p>
         </div>
       </div>
@@ -98,14 +97,14 @@
         <tr>
           <td>
               <h3 class="subtitle">
-                All rollouts are fully autonomous, <font color="red">WITHOUT</font> any heuristic grasping.
+                All rollouts are fully autonomous, <font color="red"><b>WITHOUT</b></font> any heuristic grasping.
               </h3>
           </td>
         </tr>
         <tr>
           <td>
             <div class="content has-text-justified">
-              Our method is able to perform real-world everyday tasks in a zero-shot manner, featuring generalizability across various objects, environments, and embodiments.
+              Our method is able to perform real-world everyday tasks in a <b>zero-shot</b> manner, featuring generalizability across various objects, environments, and embodiments.
             </div>
           </td>
         </tr>
@@ -206,14 +205,14 @@
                 <figure>
                 <video autoplay muted loop playsinline controls src="assets/video/tissue_paper_human.mp4" width="100%"
                       style="border-radius:10px; "></video>
-                <figcaption>Human picking up tissue paper</figcaption>
+                <figcaption>Human picking up tissue <font color="red"><b>paper</b></font></figcaption>
                 </figure>
               </div>
               <div class="col">
                 <figure>
                 <video autoplay muted loop playsinline controls src="assets/video/tissue_paper.mp4" width="100%"
                       style="border-radius:10px; "></video>
-                <figcaption>Robot picking up tissue paper</figcaption>
+                <figcaption>Robot picking up tissue <font color="red"><b>paper</b></font></figcaption>
                 </figure>
               </div>
             </div>
@@ -223,20 +222,21 @@
                 <figure>
                 <video autoplay muted loop playsinline controls src="assets/video/tissue_box_human.mp4" width="100%"
                       style="border-radius:10px; "></video>
-                <figcaption>Human picking up tissue box</figcaption>
+                <figcaption>Human picking up tissue <font color="purple"><b>box</b></font></figcaption>
                 </figure>
               </div>
               <div class="col">
                 <figure>
                 <video autoplay muted loop playsinline controls src="assets/video/tissue_box.mp4" width="100%"
                       style="border-radius:10px; "></video>
-                <figcaption>Robot picking up tissue box</figcaption>
+                <figcaption>Robot picking up tissue <font color="purple"><b>box</b></font></figcaption>
                 </figure>
               </div>
             </div>
+            <br>
             <td>
               <div class="content has-text-justified">
-                The following example of Tom and Jerry shows that our method is able to bridge the great domain gap between the real world and cartoon images, thanks to the generalizability of visual foundation models.
+                The following example of <em><b>Tom and Jerry</b></em> shows that our method is able to bridge the great domain gap between the real world and cartoon images, thanks to the generalizability of visual foundation models.
               </div>
             </td>
             <div class="row">
@@ -244,14 +244,17 @@
                 <figure>
                 <video autoplay muted loop playsinline controls src="assets/video/tom_open.webm" width="72%"
                       style="border-radius:10px; "></video>
-                <figcaption>Cat opening the drawer</figcaption>
+                <figcaption>
+                  Cat <font color="red"><b>opening</b></font> the drawer<br>
+                  (Recommend Chrome for better compatibility)
+                </figcaption>
                 </figure>
               </div>
               <div class="col">
                 <figure>
                 <video autoplay muted loop playsinline controls src="assets/video/drawer_open.mp4" width="100%"
                       style="border-radius:10px; "></video>
-                <figcaption>Robot opening the drawer</figcaption>
+                <figcaption>Robot <font color="red"><b>opening</b></font> the drawer</figcaption>
                 </figure>
               </div>
             </div>
@@ -261,14 +264,17 @@
                 <figure>
                 <video autoplay muted loop playsinline controls src="assets/video/tom_close.webm" width="72%"
                       style="border-radius:10px; "></video>
-                <figcaption>Cat closing the drawer</figcaption>
+                <figcaption>
+                  Cat <font color="purple"><b>closing</b></font> the drawer<br>
+                  (Recommend Chrome for better compatibility)
+                </figcaption>
                 </figure>
               </div>
               <div class="col">
                 <figure>
                 <video autoplay muted loop playsinline controls src="assets/video/drawer_close.mp4" width="100%"
                       style="border-radius:10px; "></video>
-                <figcaption>Robot closing the drawer</figcaption>
+                <figcaption>Robot <font color="purple"><b>closing</b></font> the drawer</figcaption>
                 </figure>
               </div>
             </div>
@@ -300,8 +306,13 @@
           <td>
             <div class="row">
               <div class="col">
+                <figure>
                 <video autoplay muted loop playsinline controls src="assets/video/llm.mp4" width="100%"
                       style="border-radius:10px; "></video>
+                <figcaption>
+                  "Clear the table."
+                </figcaption>
+                </figure>
               </div>
             </div>
             <br>
